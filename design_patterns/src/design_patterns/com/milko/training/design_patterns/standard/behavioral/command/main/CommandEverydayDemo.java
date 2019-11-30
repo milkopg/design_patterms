@@ -1,4 +1,4 @@
-package design_patterns.com.milko.training.design_patterns.standard.behavioral.command.command.main;
+package design_patterns.com.milko.training.design_patterns.standard.behavioral.command.main;
 
 public class CommandEverydayDemo {
 
