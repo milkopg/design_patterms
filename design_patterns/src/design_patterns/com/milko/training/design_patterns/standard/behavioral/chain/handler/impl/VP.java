@@ -2,7 +2,7 @@ package design_patterns.com.milko.training.design_patterns.standard.behavioral.c
 
 import design_patterns.com.milko.training.design_patterns.standard.behavioral.chain.enums.RequestType;
 import design_patterns.com.milko.training.design_patterns.standard.behavioral.chain.handler.base.Handler;
-import design_patterns.com.milko.training.design_patterns.standard.behavioral.request.Request;
+import design_patterns.com.milko.training.design_patterns.standard.behavioral.chain.request.Request;
 
 public class VP extends Handler{
 

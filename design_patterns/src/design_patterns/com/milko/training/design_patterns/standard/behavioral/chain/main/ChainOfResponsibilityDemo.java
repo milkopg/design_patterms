@@ -4,7 +4,7 @@ import design_patterns.com.milko.training.design_patterns.standard.behavioral.ch
 import design_patterns.com.milko.training.design_patterns.standard.behavioral.chain.handler.impl.CEO;
 import design_patterns.com.milko.training.design_patterns.standard.behavioral.chain.handler.impl.Director;
 import design_patterns.com.milko.training.design_patterns.standard.behavioral.chain.handler.impl.VP;
-import design_patterns.com.milko.training.design_patterns.standard.behavioral.request.Request;
+import design_patterns.com.milko.training.design_patterns.standard.behavioral.chain.request.Request;
 
 public class ChainOfResponsibilityDemo {
 

@@ -1,4 +1,4 @@
-package design_patterns.com.milko.training.design_patterns.standard.behavioral.request;
+package design_patterns.com.milko.training.design_patterns.standard.behavioral.chain.request;
 
 import design_patterns.com.milko.training.design_patterns.standard.behavioral.chain.enums.RequestType;
 
