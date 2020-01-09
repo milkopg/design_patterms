@@ -6,34 +6,16 @@ import java.util.Random;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReadWriteLock;
-import java.util.concurrent.locks.ReentrantLock;
-import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class CacheWithReadWriteLockNotOk {
 	private Map<Long, String> cache = new HashMap<>();
-	private ReadWriteLock lock = new ReentrantReadWriteLock();
-	private Lock readLock = lock.readLock();
-	private Lock writeLock = lock.writeLock();
 	
 	public String put(Long key, String value) {
-		writeLock.lock();
-		try {
-			return cache.put(key, value);
-		} finally {
-			writeLock.unlock();
-		}
+		return cache.put(key, value);
 	}
 	
 	public String get(Long key) {
-		readLock.lock();
-		try {
-			return cache.get(key);
-		} finally {
-			readLock.unlock();
-		}
-		
+		return cache.get(key);
 	}
 	
 	public static void main(String[] args) {
@@ -57,9 +39,6 @@ public class CacheWithReadWriteLockNotOk {
 		}
 		
 		ExecutorService executorService = Executors.newFixedThreadPool(4);
-		
-		System.out.println("Adding value...");
-		
 		try {
 			for (int i=0; i< 4; i++) {
 				executorService.submit(new Producer());
