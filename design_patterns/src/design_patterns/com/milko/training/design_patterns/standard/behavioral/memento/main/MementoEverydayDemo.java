@@ -1,4 +1,4 @@
-package design_patterns.com.milko.training.design_patterns.standard.behavioral.memento.memento;
+package design_patterns.com.milko.training.design_patterns.standard.behavioral.memento.main;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
