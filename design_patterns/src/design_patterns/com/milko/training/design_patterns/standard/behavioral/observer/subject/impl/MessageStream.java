@@ -7,7 +7,12 @@ import design_patterns.com.milko.training.design_patterns.standard.behavioral.ob
 
 public class MessageStream extends Subject{
 
-	private Deque<String> messageHistory = new ArrayDeque<String>() {};
+	private Deque<String> messageHistory = new ArrayDeque<String>() {
+
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = 1L;};
 	
 	@Override
 	public void setState(String message) {
