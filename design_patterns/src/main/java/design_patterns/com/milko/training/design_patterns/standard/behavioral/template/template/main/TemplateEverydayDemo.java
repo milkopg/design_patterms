@@ -4,6 +4,8 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
+import design_patterns.com.milko.training.design_patterns.standard.behavioral.template.template.model.Person;
+
 public class TemplateEverydayDemo {
 	
 	private static void printContents(List<Person> people) {

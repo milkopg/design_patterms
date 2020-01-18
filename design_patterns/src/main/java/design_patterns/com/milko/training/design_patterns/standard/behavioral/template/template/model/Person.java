@@ -1,4 +1,4 @@
-package design_patterns.com.milko.training.design_patterns.standard.behavioral.template.template.main;
+package design_patterns.com.milko.training.design_patterns.standard.behavioral.template.template.model;
 
 public class Person implements Comparable<Person>{
 	private String name;
