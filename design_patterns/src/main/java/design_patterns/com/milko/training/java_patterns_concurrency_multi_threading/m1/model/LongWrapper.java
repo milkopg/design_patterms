@@ -14,7 +14,7 @@ public class LongWrapper {
 	}
 	
 	public void incrementValue() {
-		synchronized (key) {
+		synchronized (key) { //uncomment it for race conditions
 			l = l + 1;
 		}
 	}
